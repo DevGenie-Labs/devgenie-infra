@@ -1,0 +1,31 @@
+# ===== Ansible 민감 정보 (절대 커밋 금지) =====
+ansible/inventory/hosts.ini
+ansible/inventory/hosts
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+vault_password
+.vault_pass
+.ansible_vault_pass
+ansible/group_vars/all/vault.yml  # Ansible Vault 암호화 파일 외엔 금지
+
+# ===== 환경 설정 =====
+.env
+.env.*
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== 에디터 =====
+.vscode/
+.idea/
+
+# ===== 로그 =====
+*.log
+logs/
+
+# ===== Ansible 캐시 =====
+.ansible/
+*.retry
